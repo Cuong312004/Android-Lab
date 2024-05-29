@@ -26,15 +26,18 @@ public class MainActivity extends AppCompatActivity {
     String DATABASE_NAME="database_1.db";
     // Tạo ListView
     //Khai báo ListView
-    ListView lv = findViewById(R.id.listview);
+    ListView lv;
     ArrayList<String> mylist;
     ArrayAdapter<String> myadapter;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Ham Copy CSDL từ assets vào thư mục Databases
         processCopy();
+        lv = (ListView) findViewById(R.id.listview);
         //Mo CSDL trong ung dung len
         database = openOrCreateDatabase("database_1.db",MODE_PRIVATE, null);
         mylist = new ArrayList<>();

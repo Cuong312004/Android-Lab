@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
             dbAdapter.deleteAllUsers();
             for (int i = 0; i < 10; i++) {
                 if(i%2==0)
-                    dbAdapter.createUser("Lưu Quốc Cường dzai " + i);
+                    dbAdapter.createUser("Lưu Quốc Cường " + i);
                 else
-                    dbAdapter.createUser("Hoàng mém dzai " + i);
+                    dbAdapter.createUser("Hoàng " + i);
             }
             users = getData();
             showData();
