@@ -36,7 +36,7 @@ public class MyFragment extends Fragment {
         // Inflate layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_layout, container, false);
         rootView.setBackgroundColor(color);
-        // Bạn có thể thực hiện các thao tác khác trên giao diện ở đây nếu cần
+
         return rootView;
     }
 }

@@ -12,4 +12,10 @@
     <string name="slide_up">Slide Up</string>
     <string name="bounce">Bounce</string>
     <string name="combine">Combine</string>
+    <string name="pm">Project Manager</string>
+    <string name="sale">President of Sale</string>
+    <string name="elizabeth">Lưu Quốc Cường A</string>
+    <string name="catherine">Lưu Quốc Cường B</string>
+    <string name="eli_email">luuquoccuongA@example.com</string>
+    <string name="cat_email">luuquoccuongB@example.com</string>
 </resources>

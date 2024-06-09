@@ -85,13 +85,13 @@ public class MainActivity extends AppCompatActivity {
         if (broadcastReceiver == null) {
             initBroadcastReceiver();
         }
-        registerReceiver(broadcastReceiver, intentFilter);
+        registerReceiver(broadcastReceiver, intentFilter); // Đăng ký broadcast
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        unregisterReceiver(broadcastReceiver);
+        unregisterReceiver(broadcastReceiver); //Hủy đăng ký broadcast
     }
 
     @Override

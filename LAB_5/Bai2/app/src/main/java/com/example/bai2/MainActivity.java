@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                         // Sleep 1
                         Thread.sleep(1000);
                         // Now talk to main thread
-                        // Optionally change some global variable such as: globalValue
+                        // Optionally change some global variabale such as: globalValue
                         synchronized (this) {
                             globalValue += 1;
                         }

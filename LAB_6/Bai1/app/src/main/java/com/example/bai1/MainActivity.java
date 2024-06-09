@@ -121,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
         final Animation animation = AnimationUtils.loadAnimation(MainActivity.this, animId);
         animation.setAnimationListener(animationListener);
 
+        //final Animation ani = initBlinkAnimation();
         btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v)
@@ -229,8 +230,8 @@ public class MainActivity extends AppCompatActivity {
         ScaleAnimation scaleAnimation = new ScaleAnimation(
                 1.0f, 1.0f, // fromXScale, toXScale
                 1.0f, 0.0f, // fromYScale, toYScale
-                Animation.RELATIVE_TO_SELF, 0.5f, // pivotXType, pivotXValue
-                Animation.RELATIVE_TO_SELF, 0.5f  // pivotYType, pivotYValue
+                Animation.RELATIVE_TO_SELF, 0.0f, // pivotXType, pivotXValue
+                Animation.RELATIVE_TO_SELF, 0.0f  // pivotYType, pivotYValue
         );
         scaleAnimation.setDuration(500);
         animationSet.addAnimation(scaleAnimation);
@@ -243,8 +244,8 @@ public class MainActivity extends AppCompatActivity {
         ScaleAnimation scaleAnimation = new ScaleAnimation(
                 1.0f, 1.0f, // fromXScale, toXScale
                 0.0f, 1.0f, // fromYScale, toYScale
-                Animation.RELATIVE_TO_SELF, 0.5f, // pivotXType, pivotXValue
-                Animation.RELATIVE_TO_SELF, 0.5f  // pivotYType, pivotYValue
+                Animation.RELATIVE_TO_SELF, 0.0f, // pivotXType, pivotXValue
+                Animation.RELATIVE_TO_SELF, 0.0f  // pivotYType, pivotYValue
         );
         scaleAnimation.setDuration(500);
         scaleAnimation.setInterpolator(new BounceInterpolator());

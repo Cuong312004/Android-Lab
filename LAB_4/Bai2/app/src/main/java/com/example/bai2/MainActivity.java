@@ -19,9 +19,10 @@ public class MainActivity extends AppCompatActivity {
         IntentFilter intentFilter = new IntentFilter(Intent.ACTION_POWER_CONNECTED);
         intentFilter.addAction(Intent.ACTION_POWER_DISCONNECTED);
         registerReceiver(
-                powerState,
+               powerState,
                 intentFilter
         );
+
     }
 
     private void initValue() {
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unregisterReceiver(powerState);
+        //unregisterReceiver(powerState);
     }
 
     private class PowerState extends BroadcastReceiver {
